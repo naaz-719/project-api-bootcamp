@@ -37,11 +37,11 @@ The following core technologies and tools were used to build and deploy this pro
 
 The API utilizes the /api/videos route as its primary resource. All requests and responses are JSON-based.
 
-# 1. Add a New Video (Create)
+**1. Add a New Video (Create)**
 Endpoint: POST /api/videos
 Purpose: Adds a new video record to the database.
 Validation: title and videoUrl are required.
-**Request Body Example:**
+*Request Body Example:*
 {
   "title": "Intro to Node.js",
   "description": "Learn basics of Node.js and Express",
@@ -50,7 +50,7 @@ Validation: title and videoUrl are required.
 }
 
 
-**Response (201 Created) Example:**
+*Response (201 Created) Example:*
 {
   "success": true,
   "message": "Video added successfully!",
@@ -64,29 +64,29 @@ Validation: title and videoUrl are required.
 }
 
 
-# 2. Get All Videos (Read)
+**2. Get All Videos (Read)**
 
 Endpoint: GET /api/videos
 Purpose: Retrieves a list of all video records.
 
-# 3. Get Video by ID (Read)
+**3. Get Video by ID (Read)**
 
 Endpoint: GET /api/videos/:id
 Purpose: Retrieves a single video record by its unique MongoDB ID.
 
-# 4. Update Video (Update)
+**4. Update Video (Update)**
 
 Endpoint: PUT /api/videos/:id
 Purpose: Modifies an existing video record.
 
-**Request Body Example:**
+*Request Body Example:*
 {
   "title": "Node.js Basics (Updated)",
   "description": "Updated description for testing"
 }
 
 
-# 5. Delete Video (Delete)
+**5. Delete Video (Delete)**
 
 Endpoint: DELETE /api/videos/:id
 Purpose: Deletes a single video record by its unique MongoDB ID.
@@ -95,27 +95,26 @@ Purpose: Deletes a single video record by its unique MongoDB ID.
 
 Follow these steps to get a copy of the project running on your local machine.
 
-# Prerequisites
+**Prerequisites**
 
 Node.js (LTS recommended)
 MongoDB Atlas Account (to configure a cluster)
 
-# 1. Clone the Repository
+**1. Clone the Repository**
 git clone [https://github.com/naaz-719/project-api-bootcamp.git](https://github.com/naaz-719/project-api-bootcamp.git)
 cd project-api-bootcamp
 
 
-# 2. Configure MongoDB URI
-Create a file named .env in the project root and add your MongoDB Atlas connection string. This project connects to a database named podcast.
-# .env file
-MONGO_URI="mongodb+srv://<your_user>:<your_password>@cluster0.mongodb.net/podcast?retryWrites=true&w=majority"
+**2. Configure MongoDB URI**
+Add your MongoDB Atlas connection string. This project connects to a database named podcast.
+**MONGO_URI="mongodb+srv://<your_user>:<your_password>@cluster0.mongodb.net/podcast?retryWrites=true&w=majority"**
 
 
-# 3. Install Dependencies
+**3. Install Dependencies**
 npm install
 
 
-# 4. Start the Server
+**4. Start the Server**
 Run the server using Node:
 node index.js
 
