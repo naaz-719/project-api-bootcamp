@@ -18,7 +18,9 @@ You can interact with the deployed API and test all endpoints using the resource
 |-----------------------------|--------------------------------------------------------------------|
 | Main Endpoint (GET All)     | https://project-api-bootcamp.onrender.com/api/videos               |
 |-----------------------------|--------------------------------------------------------------------|
-| Postman Online Workspace    | [🔗 View Postman Online Workspace](https://naazmulla9195-4268808.postman.co/workspace/Naaz-Mulla's-Workspace~c3cb0a93-3d2c-4c84-8f3a-c2ae612dc5d0/request/49725668-7bbdd332-eb66-446d-9792-6d6af4829756?action=share&creator=49725668&ctx=documentation)    |                             |
+| Postman Online Workspace    | [🔗 View Postman Online Workspace](https://naazmulla9195-4268808.postman.co/workspace/Naaz-Mulla's-Workspace~c3cb0a93-3d2c-4c84-8f3a-c2ae612dc5d0/request/49725668-7bbdd332-eb66-446d-9792-6d6af4829756?action=share&creator=49725668&ctx=documentation)                            |
+| Postman Collection Download | [⬇️ Video Upload API – Naaz Mulla.postman_collection.json](https://github.com/naaz-719/project-api-bootcamp/blob/main/Video%20Upload%20API%20%E2%80%93%20Naaz%20Mulla.postman_collection.json)        |
+
 
 
 Main Endpoint (GET All)
