@@ -1,0 +1,927 @@
+{
+	"info": {
+		"_postman_id": "b7eff7be-2f24-4c16-aec1-d58604668a6a",
+		"name": "Video Upload API – Naaz Mulla",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49725668",
+		"_collection_link": "https://naazmulla9195-4268808.postman.co/workspace/c3cb0a93-3d2c-4c84-8f3a-c2ae612dc5d0/collection/49725668-b7eff7be-2f24-4c16-aec1-d58604668a6a?action=share&source=collection_link&creator=49725668"
+	},
+	"item": [
+		{
+			"name": "Get data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Deploy Node.js App to Render\",\r\n  \"description\": \"Step-by-step tutorial for deploying a Node.js project using Render and GitHub integration.\",\r\n  \"videoUrl\": \"https://www.youtube.com/watch?v=olVTx5Wd5dk\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://project-api-bootcamp.onrender.com/api/videos",
+					"protocol": "https",
+					"host": [
+						"project-api-bootcamp",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"videos"
+					]
+				},
+				"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+			},
+			"response": [
+				{
+					"name": "Get data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"missing fields\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://project-api-bootcamp.onrender.com/api/videos",
+							"protocol": "https",
+							"host": [
+								"project-api-bootcamp",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"videos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 05 Nov 2025 15:21:55 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "472"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "999d57f41c2ae5b4-IAD"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"410-aIkiKumF0OhYSYUzrbOXgDy5trc\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "8e0ce281-99e2-491f"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"690b66e07b68030c6878952f\",\n            \"title\": \"Intro to Node.js and Express\",\n            \"description\": \"A beginner-friendly guide explaining the basics of Node.js and building APIs with Express.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=TlB_eWDSMt4\",\n            \"createdAt\": \"2025-11-05T15:01:52.456Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b671b7b68030c68789532\",\n            \"title\": \"Understanding REST APIs\",\n            \"description\": \"Explains RESTful architecture and HTTP methods with clear examples.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=Q-BpqyOT3a8\",\n            \"createdAt\": \"2025-11-05T15:02:51.113Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b67377b68030c68789535\",\n            \"title\": \"MongoDB Crash Course\",\n            \"description\": \"Learn how to use MongoDB for backend applications with Node.js.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=ofme2o29ngU\",\n            \"createdAt\": \"2025-11-05T15:03:19.780Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b67447b68030c68789537\",\n            \"title\": \"Updated Bootcamp Project\",\n            \"description\": \"Edited description after testing\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=PoRJizFvM7s\",\n            \"createdAt\": \"2025-11-05T15:03:32.137Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get data",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"missing fields\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://project-api-bootcamp.onrender.com/api/videos",
+							"protocol": "https",
+							"host": [
+								"project-api-bootcamp",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"videos"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 05 Nov 2025 15:22:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "999d595c39d5399e-IAD"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"3e-KGR63LGV6XV/5NqNAFcJKR5sZPE\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "eedef966-ad57-4544"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Title and videoUrl are required.\"\n}"
+				},
+				{
+					"name": "Get data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"missing fields\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://project-api-bootcamp.onrender.com/api/videos",
+							"protocol": "https",
+							"host": [
+								"project-api-bootcamp",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"videos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 05 Nov 2025 15:23:25 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "472"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "999d5a2bc8a9289e-IAD"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"410-aIkiKumF0OhYSYUzrbOXgDy5trc\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "39615ae3-534a-4ee1"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"690b66e07b68030c6878952f\",\n            \"title\": \"Intro to Node.js and Express\",\n            \"description\": \"A beginner-friendly guide explaining the basics of Node.js and building APIs with Express.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=TlB_eWDSMt4\",\n            \"createdAt\": \"2025-11-05T15:01:52.456Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b671b7b68030c68789532\",\n            \"title\": \"Understanding REST APIs\",\n            \"description\": \"Explains RESTful architecture and HTTP methods with clear examples.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=Q-BpqyOT3a8\",\n            \"createdAt\": \"2025-11-05T15:02:51.113Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b67377b68030c68789535\",\n            \"title\": \"MongoDB Crash Course\",\n            \"description\": \"Learn how to use MongoDB for backend applications with Node.js.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=ofme2o29ngU\",\n            \"createdAt\": \"2025-11-05T15:03:19.780Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b67447b68030c68789537\",\n            \"title\": \"Updated Bootcamp Project\",\n            \"description\": \"Edited description after testing\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=PoRJizFvM7s\",\n            \"createdAt\": \"2025-11-05T15:03:32.137Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Deploy Node.js App to Render\",\r\n  \"description\": \"Step-by-step tutorial for deploying a Node.js project using Render and GitHub integration.\",\r\n  \"videoUrl\": \"https://www.youtube.com/watch?v=olVTx5Wd5dk\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://project-api-bootcamp.onrender.com/api/videos",
+							"protocol": "https",
+							"host": [
+								"project-api-bootcamp",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"videos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 05 Nov 2025 15:24:50 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "565"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "999d5c3a79001972-IAD"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"52d-1phXGX+DHxEw6EojDGehKdemiL4\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "148470dc-9e4b-4617"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"690b66e07b68030c6878952f\",\n            \"title\": \"Intro to Node.js and Express\",\n            \"description\": \"A beginner-friendly guide explaining the basics of Node.js and building APIs with Express.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=TlB_eWDSMt4\",\n            \"createdAt\": \"2025-11-05T15:01:52.456Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b671b7b68030c68789532\",\n            \"title\": \"Understanding REST APIs\",\n            \"description\": \"Explains RESTful architecture and HTTP methods with clear examples.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=Q-BpqyOT3a8\",\n            \"createdAt\": \"2025-11-05T15:02:51.113Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b67377b68030c68789535\",\n            \"title\": \"MongoDB Crash Course\",\n            \"description\": \"Learn how to use MongoDB for backend applications with Node.js.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=ofme2o29ngU\",\n            \"createdAt\": \"2025-11-05T15:03:19.780Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b67447b68030c68789537\",\n            \"title\": \"Updated Bootcamp Project\",\n            \"description\": \"Edited description after testing\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=PoRJizFvM7s\",\n            \"createdAt\": \"2025-11-05T15:03:32.137Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b6c167b68030c68789547\",\n            \"title\": \"Deploy Node.js App to Render\",\n            \"description\": \"Step-by-step tutorial for deploying a Node.js project using Render and GitHub integration.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=olVTx5Wd5dk\",\n            \"createdAt\": \"2025-11-05T15:24:06.671Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get data",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Updated Bootcamp Project edited 2\",\r\n  \"description\": \"Edited description after testing\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://project-api-bootcamp.onrender.com/api/videos/690b6c167b68030c68789547",
+							"protocol": "https",
+							"host": [
+								"project-api-bootcamp",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"videos",
+								"690b6c167b68030c68789547"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 05 Nov 2025 15:26:29 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "219"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "999d5ea60b9c39b5-IAD"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"126-mA5UvOt4jRVieSmYdiolpivvnMk\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "6590413b-310c-49ba"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Video updated successfully\",\n    \"data\": {\n        \"_id\": \"690b6c167b68030c68789547\",\n        \"title\": \"Updated Bootcamp Project edited 2\",\n        \"description\": \"Edited description after testing\",\n        \"videoUrl\": \"https://www.youtube.com/watch?v=olVTx5Wd5dk\",\n        \"createdAt\": \"2025-11-05T15:24:06.671Z\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "Get data",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Updated Bootcamp Project edited 2\",\r\n  \"description\": \"Edited description after testing\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://project-api-bootcamp.onrender.com/api/videos/690b6c167b68030c68789547",
+							"protocol": "https",
+							"host": [
+								"project-api-bootcamp",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"videos",
+								"690b6c167b68030c68789547"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 05 Nov 2025 15:26:43 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "999d5efe8e470688-IAD"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"37-8g4EpU6oYGgDCie8CrhPIA8yC74\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "e2f50418-a061-42df"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Video deleted successfully\"\n}"
+				},
+				{
+					"name": "Get data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Updated Bootcamp Project edited 2\",\r\n  \"description\": \"Edited description after testing\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://project-api-bootcamp.onrender.com/api/videos/690b6c167b68030c68789547",
+							"protocol": "https",
+							"host": [
+								"project-api-bootcamp",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"videos",
+								"690b6c167b68030c68789547"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 05 Nov 2025 15:26:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "999d5f587ad10688-IAD"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"2d-8Hi/ppuMCp9BsdR9od0MlHrbKI0\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "ce68c60b-2d18-44e8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Video not found\"\n}"
+				},
+				{
+					"name": "Get data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Updated Bootcamp Project edited 2\",\r\n  \"description\": \"Edited description after testing\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://project-api-bootcamp.onrender.com/api/videos/690b6c167b68030c68789547",
+							"protocol": "https",
+							"host": [
+								"project-api-bootcamp",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"videos",
+								"690b6c167b68030c68789547"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 05 Nov 2025 15:27:12 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "999d5fb79d620688-IAD"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"2d-8Hi/ppuMCp9BsdR9od0MlHrbKI0\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "beb5c722-e122-47ce"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Video not found\"\n}"
+				},
+				{
+					"name": "Get data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Updated Bootcamp Project edited 2\",\r\n  \"description\": \"Edited description after testing\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://project-api-bootcamp.onrender.com/api/videos",
+							"protocol": "https",
+							"host": [
+								"project-api-bootcamp",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"videos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 05 Nov 2025 15:27:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "472"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "999d60142c0cd698-IAD"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"410-aIkiKumF0OhYSYUzrbOXgDy5trc\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "09f8cdf6-18eb-4d62"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"690b66e07b68030c6878952f\",\n            \"title\": \"Intro to Node.js and Express\",\n            \"description\": \"A beginner-friendly guide explaining the basics of Node.js and building APIs with Express.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=TlB_eWDSMt4\",\n            \"createdAt\": \"2025-11-05T15:01:52.456Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b671b7b68030c68789532\",\n            \"title\": \"Understanding REST APIs\",\n            \"description\": \"Explains RESTful architecture and HTTP methods with clear examples.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=Q-BpqyOT3a8\",\n            \"createdAt\": \"2025-11-05T15:02:51.113Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b67377b68030c68789535\",\n            \"title\": \"MongoDB Crash Course\",\n            \"description\": \"Learn how to use MongoDB for backend applications with Node.js.\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=ofme2o29ngU\",\n            \"createdAt\": \"2025-11-05T15:03:19.780Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"690b67447b68030c68789537\",\n            \"title\": \"Updated Bootcamp Project\",\n            \"description\": \"Edited description after testing\",\n            \"videoUrl\": \"https://www.youtube.com/watch?v=PoRJizFvM7s\",\n            \"createdAt\": \"2025-11-05T15:03:32.137Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
