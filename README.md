@@ -38,10 +38,13 @@ The following core technologies and tools were used to build and deploy this pro
 The API utilizes the /api/videos route as its primary resource. All requests and responses are JSON-based.
 
 **1. Add a New Video (Create)**
+
 Endpoint: POST /api/videos
 Purpose: Adds a new video record to the database.
 Validation: title and videoUrl are required.
+
 *Request Body Example:*
+
 {
   "title": "Intro to Node.js",
   "description": "Learn basics of Node.js and Express",
@@ -51,6 +54,7 @@ Validation: title and videoUrl are required.
 
 
 *Response (201 Created) Example:*
+
 {
   "success": true,
   "message": "Video added successfully!",
@@ -80,6 +84,7 @@ Endpoint: PUT /api/videos/:id
 Purpose: Modifies an existing video record.
 
 *Request Body Example:*
+
 {
   "title": "Node.js Basics (Updated)",
   "description": "Updated description for testing"
