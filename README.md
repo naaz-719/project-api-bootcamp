@@ -12,3 +12,28 @@ We run `yarn start` to start an HTTP server that runs on http://localhost:8080. 
 
 - [CodeSandbox — Docs](https://codesandbox.io/docs)
 - [CodeSandbox — Discord](https://discord.gg/Ggarp3pX5H)
+
+
+# Project Overview
+
+This project is part of the APIs in Action Bootcamp.
+It is a backend REST API built using Node.js, Express, and MongoDB (Mongoose) that allows users to add, retrieve, update, and delete video records.
+The API has been fully tested using Postman and deployed on Render for live access
+
+
+# Live Deployment
+
+🔗 Render URL:
+https://project-api-bootcamp.onrender.com/api/videos
+ 
+You can open this link directly to view the live API response (GET request).
+
+# Postman Collection
+
+You can test all endpoints yourself using this Postman file:
+
+📥 Download JSON:
+
+
+Or open the online workspace:
+View on Postman
