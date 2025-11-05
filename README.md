@@ -33,7 +33,7 @@ You can open this link directly to view the live API response (GET request).
 You can test all endpoints yourself using this Postman file:
 
 📥 Download JSON:
-
+Video Upload API – Naaz Mulla.postman_collection.json
 
 Or open the online workspace:
 View on Postman
