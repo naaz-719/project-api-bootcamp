@@ -11,7 +11,9 @@ This project provided hands-on experience in:
 -Deploying live backend services for public access.
 
 ## Live Access & Testing
+
 You can interact with the deployed API and test all endpoints using the resources below.
+
 | Resource                    |  URL                                                               |
 |-----------------------------|--------------------------------------------------------------------|
 |  Base URL                   | https://project-api-bootcamp.onrender.com                          |
@@ -106,20 +108,25 @@ Node.js (LTS recommended)
 MongoDB Atlas Account (to configure a cluster)
 
 **1. Clone the Repository**
+
 git clone [https://github.com/naaz-719/project-api-bootcamp.git](https://github.com/naaz-719/project-api-bootcamp.git)
 cd project-api-bootcamp
 
 
 **2. Configure MongoDB URI**
+
 Add your MongoDB Atlas connection string. This project connects to a database named podcast.
-**MONGO_URI="mongodb+srv://<your_user>:<your_password>@cluster0.mongodb.net/podcast?retryWrites=true&w=majority"**
+
+*MONGO_URI="mongodb+srv://<your_user>:<your_password>@cluster0.mongodb.net/podcast?retryWrites=true&w=majority"*
 
 
 **3. Install Dependencies**
+
 npm install
 
 
 **4. Start the Server**
+
 Run the server using Node:
 node index.js
 
